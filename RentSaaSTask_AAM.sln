@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentSaaSTask_AAM.Server", "RentSaaSTask_AAM.Server\RentSaaSTask_AAM.Server.csproj", "{22FE7C31-6121-445F-93F2-2B65796A0712}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "rentsaastask_aam.client", "rentsaastask_aam.client\rentsaastask_aam.client.esproj", "{8648680A-28E3-44E7-A721-D8E747A6A96C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22FE7C31-6121-445F-93F2-2B65796A0712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FE7C31-6121-445F-93F2-2B65796A0712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FE7C31-6121-445F-93F2-2B65796A0712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FE7C31-6121-445F-93F2-2B65796A0712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8648680A-28E3-44E7-A721-D8E747A6A96C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8648680A-28E3-44E7-A721-D8E747A6A96C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8648680A-28E3-44E7-A721-D8E747A6A96C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8648680A-28E3-44E7-A721-D8E747A6A96C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8648680A-28E3-44E7-A721-D8E747A6A96C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8648680A-28E3-44E7-A721-D8E747A6A96C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5463546-46EE-4A04-9AB5-695F8C2FFEE0}
+	EndGlobalSection
+EndGlobal

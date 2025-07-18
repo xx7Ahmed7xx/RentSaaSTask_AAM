@@ -1,0 +1,59 @@
+<div class="employee-form-container">
+  <h2>{{ isEditMode ? 'Edit Employee' : 'Add Employee' }}</h2>
+  <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>First Name</mat-label>
+      <input matInput formControlName="firstName" required>
+      @if (employeeForm.get('firstName')?.hasError('required')) {
+        <mat-error>
+          First name is required
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lastName" required>
+      @if (employeeForm.get('lastName')?.hasError('required')) {
+        <mat-error>
+          Last name is required
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" required type="email">
+      @if (employeeForm.get('email')?.hasError('required')) {
+        <mat-error>
+          Email is required
+        </mat-error>
+      }
+      @if (employeeForm.get('email')?.hasError('email')) {
+        <mat-error>
+          Invalid email address
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Position</mat-label>
+      <input matInput formControlName="position" required>
+      @if (employeeForm.get('position')?.hasError('required')) {
+        <mat-error>
+          Position is required
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <div class="form-actions">
+      <button mat-raised-button color="primary" type="submit" [disabled]="employeeForm.invalid || isLoading">
+        {{ isEditMode ? 'Update' : 'Add' }} Employee
+      </button>
+      <button mat-button type="button" (click)="onCancel()" [disabled]="isLoading">Cancel</button>
+    </div>
+    @if (isLoading) {
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    }
+  </form>
+</div>
